@@ -3,7 +3,7 @@ button.addEventListener("click", submitClick);
 
 async function getData(location) {
   let res = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=403eb774363e48cb99e161803231207&q=${location}`,
+    `https://api.weatherapi.com/v1/forecast.json?key=403eb774363e48cb99e161803231207&q=${location}`,
     { mode: "cors" }
   );
   let weatherData = await res.json();
